@@ -4,4 +4,4 @@ title: About
 permalink: /about/
 ---
 Find something interesting?
-Reach me out on [https://twitter.com/kamilpyc](Twitter)! 
+Reach me out on [Twitter](https://twitter.com/kamilpyc)! 

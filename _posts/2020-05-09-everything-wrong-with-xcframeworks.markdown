@@ -6,7 +6,7 @@ categories: programming, xcframework, xcode
 ---
 Good old frameworks are dated back to time where there was only one platfrom and one language - Obj-C. Today we have multiple version of Swift and different platforms to support. 
 
-When XCFrameworks was introduces in last years WWDC I was really excited:
+When XCFrameworks was introduced in last years WWDC I was really excited:
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">&quot;XCFrameworks make it possible to bundle a binary framework or library for multiple platforms —including iOS devices, iOS simulators, and UIKit for Mac — into a single distributable .xcframework bundle that your developers can use within their own applications.&quot; 😲</p>&mdash; Kamil Pyć (@KamilPyc) <a href="https://twitter.com/KamilPyc/status/1135628413279100929?ref_src=twsrc%5Etfw">June 3, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 

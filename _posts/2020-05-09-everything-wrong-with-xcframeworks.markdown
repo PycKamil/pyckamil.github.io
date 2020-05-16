@@ -56,7 +56,7 @@ ProcessXCFrameworkLibrary PromisesObjC.xcframework/ios-i386_x86_64-simulator/Pro
 
 Because of that Xcode need to have explicit list of xcframeworks to process and `FRAMEWORK_SEARCH_PATHS` does not work.
 Xcode wants to optimise the usage of `ProcessXCFrameworkLibrary` and ther is only one call per single `xcframework`. That's will make build to fail in pretty common usage case.
-Let say we have target `ModelA.framework` and `ModelB.framework` that links same `ModelCore.xcframework`. Xcode selects one of this targets to inlude the `ProcessXCFrameworkLibrary` step and if this selected target will start after another target utilising same xcframework build will simply fail with `Framework not found ModelCore`. I took me some time to figure out this race going on when my builds fails randomly 50% of time.
+Let’s say we have target `ModelA.framework` and `ModelB.framework` that links same `ModelCore.xcframework`. Xcode selects one of this targets to include the `ProcessXCFrameworkLibrary` step and if this selected target will start after another target utilising same xcframework build will simply fail with `Framework not found ModelCore`. I took me some time to figure out this race going on when my builds fails randomly 50% of time.
 	
 	
 ## Swift

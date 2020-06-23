@@ -58,7 +58,15 @@ Because of that Xcode need to have explicit list of xcframeworks to process and 
 Xcode wants to optimise the usage of `ProcessXCFrameworkLibrary` and ther is only one call per single `xcframework`. That's will make build to fail in pretty common usage case.
 Let’s say we have target `ModelA.framework` and `ModelB.framework` that links same `ModelCore.xcframework`. Xcode selects one of this targets to include the `ProcessXCFrameworkLibrary` step and if this selected target will start after another target utilising same xcframework build will simply fail with `Framework not found ModelCore`. I took me some time to figure out this race going on when my builds fails randomly 50% of time.
 	
+**WWDC2020 update:**
+Xcode 12 fixes the race condition bug: 
+
+{% highlight text %}
+
+Fixed a race condition where multiple targets using the same XCFramework could result in non-deterministic build failures.
 	
+{% endhighlight %}
+
 ## Swift
 In order to produce Swift libary that's support module stability, frameworks needs to be created with `BUILD_LIBRARY_FOR_DISTRIBUTION` turned on: 
 

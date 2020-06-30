@@ -34,7 +34,7 @@ In order to produce xcframework we need to export all of the frameworks and then
 
 {% endhighlight %}
 
-You can check out full [create script on Github](https://github.com/bielikb/xcframeworks/blob/master/scripts/create_xcframeworks_catalina.sh) created by Boris Bielik - it's over 100 lines of code. 
+You can check out full [create script on Github](https://github.com/bielikb/xcframeworks/blob/master/scripts/create_xcframeworks_catalina.sh) created by Boris Bielik - it's over 100 lines of code. Update: Boris created convinient [Fastlane plugin](https://github.com/bielikb/xcframeworks#Create-xcframework-using-fastlane-plugin) that wraps this boilerplate up nicely.
 
 I think that this over complication can be one of the reasons why XCFrameworks are [still not supported by Carthage](https://github.com/Carthage/Carthage/pull/2801).
 	
